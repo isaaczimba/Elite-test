@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #slide-image {
+    position: relative;
+    left: 100%;
+    transition: left 1s ease-in-out;
+}
+.slideshow-container img{
+  max-height: 300px;
+}
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <img id="slide-image" src="image-6.jpg" alt="Sliding Image">
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const image = document.getElementById("slide-image");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                image.style.left = "0"; // Moves the image into view
+                observer.unobserve(image); // Ensures animation runs only once
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(image);
+});
+</script>
+
+ <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
