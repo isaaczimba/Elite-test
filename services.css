@@ -15,7 +15,7 @@ body{
   background-attachment: fixed;
   color: white;
   overflow-x: hidden;
-
+  text-align: center;
 }
 
 @media only screen and (min-width: 1201px) {
@@ -30,8 +30,7 @@ body{
   justify-content: center;
   height: 80px;
   width: 100%;
-  z-index: 100;  
-
+    z-index: 100;
 }
 
 .logo-img{
@@ -146,11 +145,11 @@ h1{
   border-radius: 20px;
 }
 .sec-pt2{
-   margin-left: 5%;
-  display: flex;
-  flex-direction: row;
+  margin-left: 12%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
-  transform: translateX(-120px);
+  transform: translateX(-100px);
   transition: opacity 1.8s ease, transform 0.9s ease;
 }
 .sec-pt2.sec-pt2-active{
@@ -163,17 +162,20 @@ h1{
   gap: 30px;
 }
 .sec-pt1{
+  text-align: start;
   width: 400px;
   height: 550px;
 }
 .sec-pt{
-  width: 80%;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 15%;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 .last-pt{
+  margin-left: 100px;
+  text-align: start;
   font-size: 20px;
   margin-right: 35%;
   margin-bottom: 10%;
@@ -212,6 +214,7 @@ h1{
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center; 
   width: 100%;
+  text-align: start;
 }
 .footer-icons{
   width: 20px;
@@ -344,7 +347,7 @@ h1{
   color: #3636fc;
 }
 .pt2-img1, .pt2-img2{
-  max-height: 370px;
+  max-height: 340px;
   height: 370px;
   border-radius: 20px;
   
@@ -372,9 +375,11 @@ h1{
   transform: translateX(0);
 }
 .sec-pt1{
+  text-align: start;
   width: 350px;
   height: 500px;
   margin-left: 5%;
+  margin-bottom: 5%;
 }
 .sec-pt{
    width: 96%;
@@ -386,6 +391,8 @@ h1{
 
 }
 .last-pt{
+  margin-left: 40px;
+  text-align: start;
   font-size: 20px;
   margin-bottom: 10%;
 }
@@ -418,6 +425,7 @@ h1{
   width: 60%;
 }
 .inner-footer{
+  text-align: start;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -539,7 +547,7 @@ hr{
   border: none;
   clear:both;
   display:block;
-  width: 50%;               
+  width: 75%;               
   background-color:#3b3bff;
   height: 3px;
   margin-bottom: 10px;
@@ -588,7 +596,7 @@ h1{
 }
 
 .sec-pt1{
-  
+  text-align: start;
   width: 60%;
   margin-top: 5%;
   margin-bottom: 10%;
@@ -602,9 +610,10 @@ h1{
  
 }
 .last-pt{
-  width: 90%;
+  margin-left: 50px;
+  width: 80%;
   font-size: 20px;
-  
+  text-align: start;
   margin-bottom: 10%;
 }
 /*.menu-button{
@@ -618,6 +627,7 @@ h1{
   justify-items: center; 
 }
 .footer{
+  
   color: black;
   padding-top:0px ;
   width: 100%;
@@ -637,6 +647,7 @@ h1{
   width: 60%;
 }
 .inner-footer{
+  text-align: start;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -803,7 +814,7 @@ h1{
 
 .sec-pt1{
   
-  width: 60%;
+  width: 65%;
   margin-top: 5%;
   margin-bottom: 10%;
 }
@@ -813,12 +824,14 @@ h1{
   width: 100%;
   display: flex;
   flex-direction: column;
+  text-align: start;
  
 }
 .last-pt{
-  width: 90%;
+  text-align: start;
+  width: 95%;
   font-size: 20px;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-bottom: 10%;
 }
 /*.menu-button{
@@ -856,6 +869,7 @@ h1{
   grid-template-columns: 1fr 1fr;
   padding-left: 30px;
   width: 90%;
+  text-align: start;
 }
 .footer-icons{
   width: 20px;
@@ -889,18 +903,19 @@ nav{
 }
 
 nav ul{
-  width: 85%;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   
 }
 nav li{
-  height: 40px;
+  height: 70px;
 }
 nav a{
   height: 100%;
-  padding: 0px 20px;
+  padding: 0px 30px;
   font-weight: 500;
   text-decoration: none;
   display: flex;
@@ -916,8 +931,8 @@ nav a:hover{
   position: fixed;
   top: 0; 
   right: 0;
-  height: 100vh;
-   width: 50%;
+  height: 100%;
+   width: 60%;
   padding-left: 20px;
   padding-top: 20px;
   background-color: white;
@@ -927,16 +942,19 @@ nav a:hover{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  transition: right 1.5s ease-in-out;
+   
+
 }
 .sidebar li{
- height: 70px;
+  
   width: 100%;
 }
 .sidebar a{
   width: 100%;
 }
 .menu-hider{
- margin-left: 65%;
+ margin-left: 60%;
  
 }
 /*-----------------------------------------------------------*/ 
@@ -951,9 +969,7 @@ nav a:hover{
   .menu-button{
     display: block;
   }
-  .sidebar{
-    width: 100%;
-  }
+ 
   .a-item{
   color: #3b3bff;
 }
@@ -970,7 +986,7 @@ hr{
   border: none;
   clear:both;
   display:block;
-  width: 50%;               
+  width: 90%;               
   background-color:#3b3bff;
   height: 3px;
   margin-bottom: 10px;
@@ -1025,8 +1041,10 @@ h1{
   width: 80%;
   margin-top: 5%;
   margin-bottom: 10%;
+  
 }
 .sec-pt{
+  text-align: start;
   align-items: center;
   width: 100%;
   display: flex;
@@ -1034,6 +1052,7 @@ h1{
   gap: 15%;
 }
 .last-pt{
+  text-align: start;
   width: 90%;
   font-size: 20px;
   margin-left: 10%;
@@ -1076,6 +1095,7 @@ h1{
   grid-template-columns: 1fr;
   padding-left: 30px;
   width: 90%;
+  text-align: start;
 }
 .footer-icons{
   width: 20px;
@@ -1098,9 +1118,7 @@ h1{
   .menu-button{
     display: block;
   }
-  .sidebar{
-    width: 100%;
-  }
+
   .a-item{
   color: #3b3bff;
 }
@@ -1117,7 +1135,7 @@ hr{
   border: none;
   clear:both;
   display:block;
-  width: 50%;               
+  width: 70%;               
   background-color:#3b3bff;
   height: 3px;
   margin-bottom: 10px;
@@ -1127,6 +1145,7 @@ html{
 }
 
 p{
+
   font-size: 18px;
 } 
 .title{
@@ -1180,6 +1199,7 @@ h1{
   margin-bottom: 10%;
 }
 .sec-pt{
+  text-align: start;
   align-items: center;
   width: 100%;
   display: flex;
@@ -1187,6 +1207,7 @@ h1{
   gap: 15%;
 }
 .last-pt{
+  text-align: start;
   width: 90%;
   font-size: 20px;
   margin-left: 10%;
@@ -1213,13 +1234,13 @@ h1{
 }
 nav{
   width: 100%;
- height: 80px;
+ height: 60px;
   background-color: white;
 }
 
 
 nav ul{
-  width: 90%;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -1227,7 +1248,7 @@ nav ul{
  
 }
 nav li{
-  height: 50px;
+  height: 70px;
 }
 nav a{
   height: 100%;
@@ -1248,7 +1269,7 @@ nav a:hover{
   top: 0; 
   right: 0;
   height: 100%;
-  width: 50%;
+  width: 60%;
   padding-left: 20px;
   padding-top: 20px;
   background-color: white;
@@ -1300,6 +1321,7 @@ nav a:hover{
   width: 60%;
 }
 .inner-footer{
+  text-align: start;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr;

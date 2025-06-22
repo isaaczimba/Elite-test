@@ -495,6 +495,7 @@ h2{
   width: 100%;
   background-color: #eee;
   justify-items: center; 
+  text-align: center;
   padding-bottom: 2%;
    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -515,8 +516,10 @@ h2{
 .inner-footer hr{
   border-radius: 20px;
   width: 60%;
+  
 }
 .inner-footer{
+  text-align: start;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1017,6 +1020,7 @@ h2{
   justify-items: center; 
   padding-bottom: 2%;
    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+   text-align: center;
 }
 
 .footer-icons{
@@ -1037,6 +1041,7 @@ h2{
   width: 60%;
 }
 .inner-footer{
+  text-align: start;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1533,6 +1538,7 @@ h2{
   padding-bottom: 2%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   font-size: 15px;
+  text-align: center;
 }
 .footer p{
   font-size: 15px;
@@ -1561,6 +1567,7 @@ h2{
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center; 
   width: 100%;
+  text-align: start;
 }
 .hideOnMobile{
     display: none;
@@ -2052,13 +2059,9 @@ h2{
   padding-top: 10px ;
   width: 100%;
   background-color: #eee;
-  justify-items: center;
-  align-items: center; 
-  justify-content: center;
-  align-content: center;
   padding-bottom: 2%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  font-size: 15px;
+  text-align: center;
 }
 .footer p{
   font-size: 15px;
@@ -2085,9 +2088,10 @@ h2{
 .inner-footer{
   padding-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center; 
-  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  padding-left: 20px;
+  text-align: start;
 }
 
 .hideOnMobile{
@@ -2170,7 +2174,7 @@ nav a:hover{
   top: 0; 
   right: 0;
   height: 100%;
-  width: 50%;
+  width: 60%;
   padding-left: 20px;
   padding-top: 20px;
   background-color: white;
@@ -2579,6 +2583,7 @@ h2{
   padding-bottom: 2%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   font-size: 15px;
+  text-align: center;
 }
 .footer p{
   font-size: 15px;
@@ -2609,6 +2614,7 @@ h2{
   align-content: center;
   justify-content: center; 
   width: 100%;
+  text-align: start;
 }
 
 .hideOnMobile{
@@ -2622,7 +2628,7 @@ h2{
    .slide-container{
 			position: relative;
 			width: 100%;
-			height: 700px;
+			height: 500px;
 		}
   .slides img{
     opacity: 1;
@@ -2787,7 +2793,8 @@ html{
   scroll-behavior: smooth;
 }
 .pt2-img{
- width: 80%;
+  margin-top: 10%;
+ width: 270px;
   border-radius: 10px;
 }
 .sec-pt2{
@@ -2797,8 +2804,8 @@ html{
 }
 .sec-pt1{
   padding: 10px 0px;
-  width: 75%;
-  height: 460px;
+  width: 250px;
+  
 }
 .sec-pt{
   align-items: center;
@@ -2841,8 +2848,8 @@ html{
   padding-right: 25px;
   background-color: white;
   border-radius: 10px;
-  width: 85%;
-  height: 300px;
+  width: 200px;
+  height: 450px;
   margin-bottom: 5%;
   align-items: center;
   border-width: 1px;
@@ -2853,7 +2860,7 @@ html{
 }
 .third-sec img{
   margin-top: -15%;
-  width: 390px;
+  width: 250px;
   border-radius: 10px;
   margin-bottom: 5%;
 }
@@ -2878,7 +2885,7 @@ p{
   font-size: 20px;
 }    
 h1{
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 8%;
   padding: 20px;
   margin-bottom: 2%;
@@ -2886,6 +2893,7 @@ h1{
   color: #3636fc;
 }
 h2{
+  
   font-size: 20px;
   font-weight: 400;
 }
@@ -3060,7 +3068,7 @@ nav a:hover{
     }
     #slide-image {
     position: relative;
-    left: 35%;
+    left: 20%;
     transition: left 1s ease-in-out;
     margin-left: 5%;
     }
@@ -3096,6 +3104,7 @@ nav a:hover{
   padding-bottom: 2%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   font-size: 15px;
+  text-align: center;
 }
 .footer p{
   font-size: 15px;
@@ -3123,9 +3132,10 @@ nav a:hover{
 .inner-footer{
   padding-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center; 
-  width: 100%;
+  grid-template-columns: 1fr;
+  width: 90%;
+  text-align: start;
+  margin-left: 20px;
 }
 
 .hideOnMobile{

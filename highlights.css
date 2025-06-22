@@ -6,9 +6,9 @@
 
 
 body{
+  overflow-x: hidden;
     margin: 0;
     padding: 0;
-    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
 }
@@ -26,10 +26,12 @@ body{
   justify-content: center;
   height: 80px;
   width: 100%;
-
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .logo-img{
+  margin-top: 15px;
   width: 120px;
  
 }
@@ -184,6 +186,7 @@ h2{
 }
 
 .logo-img{
+  margin-top: 15px;
   width: 110px;
   margin-left: -165%;
 }
@@ -340,9 +343,11 @@ h2{
   top: 0;
   transition: background-color .6s ease-in-out;
    background-color: white;
+   height: 80px;
 }
 
 .logo-img{
+  margin-top: 10px;
    width: 100px;
   margin-left: 5%;
 }
@@ -514,10 +519,12 @@ h2{
   width: 100%;
   top: 0;
    background-color: white;
+   height: 80px;
 }
 
 .logo-img{
-  width: 90px;
+  margin-top: 10px;
+  width: 100px;
   margin-left: 5%;
 }
 
@@ -673,39 +680,38 @@ h2{
 
 }
 @media only screen and (min-width:321px) and (max-width:480px) {
-.nav-container{
-  top: 0;
-  left: 0;
-  background-color: white;
+ .nav-container{
+ z-index: 100;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  height: 80px;
   width: 100%;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  top: 0;
+  background-color: white;
+  height: 70px;
 }
 
 .logo-img{
-  width: 100px;
+  width: 90px;
   margin-left: 5%;
+  margin-top: 15px;
 }
 
 nav{
   width: 100%;
-  height: 60px;
   background-color: white;
 }
 nav ul{
-  width: 100%;
+ width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 nav li{
-  height: 70px;
+  height: 60px;
 }
 nav a{
   height: 100%;
@@ -726,11 +732,11 @@ nav a:hover{
   top: 0; 
   right: 0;
   height: 100%;
-  width: 50%;
+  width: 60%;
   padding-left: 20px;
   padding-top: 20px;
   background-color: white;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
   list-style: none;
   display: none;
   flex-direction: column;
@@ -743,12 +749,9 @@ nav a:hover{
 .sidebar a{
   width: 100%;
 }
-
 .menu-hider{
  margin-left: 60%;
- 
 }
-
 /*-----------------------------------------------------------*/   
     .hideOnMobile{
     display: none;
@@ -774,7 +777,7 @@ nav a:hover{
 .hight-img-cont{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3%;
+    gap: 2%;
 }
 img{
     max-height: 300px;
